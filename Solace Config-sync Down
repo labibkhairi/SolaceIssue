@@ -1,8 +1,8 @@
-Reference:
+- Reference:
 https://docs.solace.com/Features/Config-Sync/Configuring-Config-Sync.htm
 Config-sync Status Down
 
-Error Config Sync Down
+- Error Config Sync Down
 solacePrimary(admin/config-sync)# show config-sync
 
 Admin Status                      : Enabled
@@ -16,7 +16,7 @@ Admin Status                      : Enabled
 Oper Status                       : Down (2 local tables have problems:
                                       (0,Router,'site') [Out-Of-Sync], ...)
 
-Execute These command:
+- Execute These command:
 solacePrimary(admin/config-sync)# assert-leader router
 WARNING: This command can delete SEMP sessions on the HA mate of this
 router, logging out SEMP and PubSub+ Manager users.
@@ -28,7 +28,7 @@ AD-inactive router. Clients connected to this router will not
 be affected.
 Do you want to continue (y/n)? y
 
-Check Status Config Sync:
+- Check Status Config Sync:
 solacePrimary(admin/config-sync)# show config-sync
 
 Admin Status                      : Enabled
